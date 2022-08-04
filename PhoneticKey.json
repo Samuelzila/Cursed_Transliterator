@@ -1,0 +1,169 @@
+{
+	"[b]": {
+		"esperanto": "b",
+		"deseret": "𐐺",
+		"shavian": "𐑚"
+	},
+	"[t͡s]": {
+		"esperanto": "c",
+		"deseret": "𐐻𐑅",
+		"shavian": "𐑑𐑕"
+	},
+	"[t͡ʃ]": {
+		"esperanto": "ĉ",
+		"deseret": "𐐽",
+		"shavian": "𐑗"
+	},
+	"[d]": {
+		"esperanto": "d",
+		"deseret": "𐐼",
+		"shavian": "𐑛"
+	},
+	"[f]": {
+		"esperanto": "f",
+		"deseret": "𐑁",
+		"shavian": "𐑓"
+	},
+	"[g]": {
+		"esperanto": "g",
+		"deseret": "𐑀",
+		"shavian": "𐑜"
+	},
+	"[d͡ʒ]": {
+		"esperanto": "ĝ",
+		"deseret": "𐐾",
+		"shavian": "𐑡"
+	},
+	"[h]": {
+		"esperanto": "h",
+		"deseret": "𐐸",
+		"shavian": "𐑣"
+	},
+	"[x]": {
+		"esperanto": "ĥ",
+		"deseret": "𐐸",
+		"shavian": "𐑣"
+	},
+	"[j]": {
+		"esperanto": "j",
+		"deseret": "𐐷",
+		"shavian": "𐑘"
+	},
+	"[ʒ]": {
+		"esperanto": "ĵ",
+		"deseret": "𐑈",
+		"shavian": "𐑠"
+	},
+	"[k]": {
+		"esperanto": "k",
+		"deseret": "𐐿",
+		"shavian": "𐑒"
+	},
+	"[l]": {
+		"esperanto": "l",
+		"deseret": "𐑊",
+		"shavian": "𐑤"
+	},
+	"[m]": {
+		"esperanto": "m",
+		"deseret": "𐑋",
+		"shavian": "𐑥"
+	},
+	"[n]": {
+		"esperanto": "n",
+		"deseret": "𐑌",
+		"shavian": "𐑯"
+	},
+	"[p]": {
+		"esperanto": "p",
+		"deseret": "𐐹",
+		"shavian": "𐑐"
+	},
+	"[r]": {
+		"esperanto": "r",
+		"deseret": "𐑉",
+		"shavian": "𐑮"
+	},
+	"[s]": {
+		"esperanto": "s",
+		"deseret": "𐑅",
+		"shavian": "𐑕"
+	},
+	"[ʃ]": {
+		"esperanto": "ŝ",
+		"deseret": "𐑇",
+		"shavian": "𐑖"
+	},
+	"[t]": {
+		"esperanto": "t",
+		"deseret": "𐐻",
+		"shavian": "𐑑"
+	},
+	"[v]": {
+		"esperanto": "v",
+		"deseret": "𐑂",
+		"shavian": "𐑝"
+	},
+	"[z]": {
+		"esperanto": "z",
+		"deseret": "𐑆",
+		"shavian": "𐑟"
+	},
+	"[a]": {
+		"esperanto": "a",
+		"deseret": "𐐰",
+		"shavian": "𐑨"
+	},
+	"[e]": {
+		"esperanto": "e",
+		"deseret": "𐐯",
+		"shavian": "𐑧"
+	},
+	"[i]": {
+		"esperanto": "i",
+		"deseret": "𐐨",
+		"shavian": "𐑰"
+	},
+	"[o]": {
+		"esperanto": "o",
+		"deseret": "𐐬",
+		"shavian": "𐑴"
+	},
+	"[u]": {
+		"esperanto": "u",
+		"deseret": "𐐭",
+		"shavian": "𐑵"
+	},
+	"diphtongs": {
+        "[ai̯]": {
+            "esperanto": "aj",
+            "deseret": "𐐰𐐷",
+            "shavian": "𐑭𐑘"
+        },
+        "[au̯]": {
+            "esperanto": "aŭ",
+            "deseret": "𐐵",
+            "shavian": "𐑬"
+        },
+        "[ei̯]": {
+            "esperanto": "ej",
+            "deseret": "𐐯𐐷",
+            "shavian": "𐑧𐑘"
+        },
+        "[eu̯]": {
+            "esperanto": "eŭ",
+            "deseret": "𐐯𐐳",
+            "shavian": "𐑧𐑳"
+        },
+        "[oi̯]": {
+            "esperanto": "oj",
+            "deseret": "𐐲𐐷",
+            "shavian": "𐑪𐑘"
+        },
+        "[ui̯]": {
+            "esperanto": "uj",
+            "deseret": "𐐳𐐷",
+            "shavian": "𐑫𐑘"
+        }
+    }
+}
