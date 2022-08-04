@@ -1,4 +1,4 @@
-{
+var phoneticKey = {
 	"[b]": {
 		"esperanto": "b",
 		"deseret": "𐐺",

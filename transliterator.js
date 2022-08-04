@@ -1,44 +1,41 @@
-/*
- * This script outputs a string transliterated from esperanto into the file result.txt (will create it if inexistent).
- * Please configure the capitalised variables before running the script with nodejs
- */
+function transliterate() {
+    // The STRING variable defines the string, in esperanto, to transliterate, and is taken from the input textarea
+    const STRING = document.getElementById('input').value;
+    //The ALPHABET variable defines which alphabet to transliterate into.
+    //Currently supported alphabets are "deseret" and "shavian".
+    const ALPHABET = document.getElementById('alphabet').value;
 
-// The STRING variable defines the string, in esperanto, to transliterate
-const STRING = ``;
-//The ALPHABET variable defines which alphabet to transliterate into. Currently supported alphabets are "deseret" and "shavian".
-const ALPHABET = 'deseret'
+    //output is the string that will be altered all the way
+    let output = STRING.toLowerCase();
 
-const fs = require('fs');
-const phoneticKey = require('./PhoneticKey.json');
+    //separating diphtongs from the rest
+    let sounds = {}
+    Object.assign(sounds, phoneticKey);
+    let diphtongs = {}
+    Object.assign(diphtongs, phoneticKey.diphtongs);
 
-//output is the string that will be altered all the way
-let output = STRING.toLowerCase();
+    delete sounds.diphtongs;
 
-//separating diphtongs from the rest
-let sounds = {}
-Object.assign(sounds, phoneticKey);
-let diphtongs = {}
-Object.assign(diphtongs, phoneticKey.diphtongs);
+    //replacing esperanto diphtongs
+    for (let i = 0;i < Object.keys(diphtongs).length;i++) {
+        let key = Object.keys(diphtongs)[i];
+        output = output.replace(diphtongs[key].esperanto, diphtongs[key][ALPHABET]);
+    }
+    output = output.split('');
 
-delete sounds.diphtongs;
-
-//replacing esperanto diphtongs
-for (let i = 0;i < Object.keys(diphtongs).length;i++) {
-    let key = Object.keys(diphtongs)[i];
-    output = output.replace(diphtongs[key].esperanto, diphtongs[key][ALPHABET]);
-}
-output = output.split('');
-
-//replacing the rest
-for (i = 0;i < output.length;i++) {
-    for (let j = 0;j < Object.keys(sounds).length;j++) {
-        let value = Object.values(sounds)[j].esperanto;
-        if (value == output[i]) {
-            output[i] = Object.values(sounds)[j][ALPHABET];
-            break;
+    //replacing the rest
+    for (i = 0;i < output.length;i++) {
+        for (let j = 0;j < Object.keys(sounds).length;j++) {
+            let value = Object.values(sounds)[j].esperanto;
+            if (value == output[i]) {
+                output[i] = Object.values(sounds)[j][ALPHABET];
+                break;
+            }
         }
     }
-}
 
-//outputs the result into result.txt because console.log sucks
-fs.writeFileSync('./result.txt', output.join(''));
+    //Joins all sounds into a string
+    output = output.join('');
+    //output results into output textarea
+    document.getElementById('output').value = output;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Cursed_Transliterator</title>
+    <script src="https://kit.fontawesome.com/4c15f748db.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="menubar">
+      <div>
+        <button class="menubtn" id="minimise-btn"><i class="fa-solid fa-window-minimize"></i></button>
+        <button class="menubtn" id="max-unmax-btn"><i class="fa-solid fa-window-maximize"></i></button>
+        <button class="menubtn" id="close-btn"><i class="fa-solid fa-xmark fa-lg"></i></button>
+      </div>
+    </div>
+    <main>
+      <h2>Esperanto to 𐐺𐐰𐐺𐐯𐑊𐐬 transliterator.</h2>
+      <textarea placeholder="Esperanto text..." id="input"></textarea>
+      <div>
+        <button onclick="transliterate();">Convert into</button>
+        <select id="alphabet">
+          <option value="deseret" selected>𐐼𐐯𐑆𐐯𐑉𐐯𐐻</option>
+          <option value="shavian">𐑖𐑨𐑝𐑰𐑨𐑯</option>
+        </select>
+      </div>
+      <textarea readonly placeholder="Output" id="output"></textarea>
+    
+      <script src="./transliterator.js"></script>
+      <script src="./PhoneticKey.js"></script>
+      <script src="./renderer.js"></script>
+    </main>
+  </body>
+</html>
