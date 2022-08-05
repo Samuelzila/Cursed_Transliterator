@@ -70,7 +70,7 @@ button {
 #menubar {
     display:flex;
     align-items:center;
-    justify-content:end;
+    justify-content:space-between;
     -webkit-app-region:drag;
     background-color:var(--color-background-dark);
 }
