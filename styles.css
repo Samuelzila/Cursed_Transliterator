@@ -41,9 +41,10 @@ select {
     border:none;
     outline:none;
     font-size:1em;
-    background-color:transparent;
+    background-color:var(--color-main);
     color:var(--color-text);
     cursor: pointer;
+    border-radius:0.5rem;
 }
 button {
     border:none;
