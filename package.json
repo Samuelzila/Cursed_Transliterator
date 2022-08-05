@@ -1,7 +1,7 @@
 {
   "name": "cursed_transliterator",
   "version": "2.0.1",
-  "description": "A minimal Electron application",
+  "description": "Esperanto to 𐐺𐐰𐐺𐐯𐑊𐐬 transliterator.",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
