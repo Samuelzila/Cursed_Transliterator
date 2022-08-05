@@ -1,6 +1,6 @@
 {
   "name": "cursed_transliterator",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Esperanto to 𐐺𐐰𐐺𐐯𐑊𐐬 transliterator.",
   "main": "main.js",
   "scripts": {
