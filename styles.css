@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Deseret&family=Noto+Sans+Shavian&display=swap');
 :root {
     --font: 'Noto Sans', 'Noto Sans Deseret', 'Noto Sans Shavian', sans-serif;
+    --color-main:#bf0303;
+    --color-main-light:#fb0404;
+    --color-main:#970202;
+    --color-background:hsl(0, 7%, 9%);
+    --color-background-light:hsl(0, 7%, 15%);
+    --color-background-dark:hsl(0, 7%, 5%);
+    --color-text:#ffffff;
     font-family: var(--font);
     font-size: 2vw;
 }
 body {
     margin:0;
     padding:0;
+    background-color:var(--color-background);
+    color:var(--color-text);
 }
 main {
     display:flex;
@@ -20,15 +29,40 @@ textarea {
     width:50vw;
     height:25vh;
     margin:1em;
+    font-size:1em;
+    background-color:var(--color-background-light);
+    border:none;
+    border-radius:0.5rem;
+    color:var(--color-text);
 }
 select {
     font-family:var(--font);
     width:max-content;
     border:none;
     outline:none;
+    font-size:1em;
+    background-color:transparent;
+    color:var(--color-text);
+    cursor: pointer;
 }
 button {
     border:none;
+    font-size:1em;
+    background-color:transparent;
+    color:var(--color-text);
+    cursor: pointer;
+}
+.box {
+    background-color:var(--color-background-light);
+    border-radius:0.5rem;
+}
+.interractive {
+    background-color:var(--color-main);
+}
+.interractive:hover {
+    filter:brightness(0.75);
+    transition: all 0.1s;
+    cursor: pointer;
 }
 
 /* Menu Bar */
@@ -37,6 +71,7 @@ button {
     align-items:center;
     justify-content:end;
     -webkit-app-region:drag;
+    background-color:var(--color-background-dark);
 }
 #menubar > div {
     display:flex;
@@ -47,4 +82,14 @@ button {
     margin:0.5em;
     background-color:transparent;
     -webkit-app-region:no-drag;
+    font-size:16px;
+    color:var(--color-text);
+}
+.menubtn:hover {
+    transition:all 0.1s;
+    filter:brightness(0.75);
+}
+#close-btn:hover {
+    color:red;
+    filter:brightness(1);
 }
