@@ -9,3 +9,7 @@ This is an app that transliterates text from esperanto into various obscure alph
 ## Usage
 Simply put the text to transliterate (in esperanto) in the top text area, then select the alphabet and click *Convert into*.  
 The text will then appear in the bottom text area.
+
+### On linux
+In order to run the program, simply reach the directory in which the program is with your terminal, and type:  
+`$ ./Cursed_Transliterator `

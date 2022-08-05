@@ -4,7 +4,8 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "asar": "asar pack . Cursed_Transliterator.asar --unpack-dir \"{.gitignore, .git/, README.md}\""
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,8 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^20.0.1"
+  },
+  "dependencies": {
+    "asar": "^3.2.0"
   }
 }
