@@ -1,4 +1,4 @@
-### The electron version used is vulnerable to a major CVE. I do not intend on fixing this at the moment.
+### The electron version used is vulnerable to a major CVE. I do not intend on fixing this at the moment because the code runs locally, without a connection to internet.
 
 # Cursed_Transliterator
 This is an app that transliterates text from esperanto into various obscure alphabets.
